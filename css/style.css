@@ -312,6 +312,8 @@ main {
 }
 .togglePassword {
   position: absolute;
+  padding-top: 1rem;
+  padding-left: 18rem;
   font-size: 22px;
   cursor: pointer;
 }      
