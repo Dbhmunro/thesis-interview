@@ -12,22 +12,34 @@
     <body>
 
         <header>
-            <h1>Stamp</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Integrations</a>
-                    </li>
-                    <li>
-                        <a href="#">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="#">Contacts</a>
-                    </li>
-                </ul>
+            <!-- navbar -->
+            <nav id="nav">
+                <div class="nav-center">
+                <!-- nav header -->
+                <div class="nav-header">
+                    <img src="./img/logo.svg" class="logo" alt="Stamp logo" />
+                    <button class="nav-toggle">
+                        <img class="menu" src="./img/Menu Icon.svg"/>
+                    </button>
+                </div>
+                <!-- links -->
+                <div class="links-container">
+                    <ul class="links">
+                        <li>
+                            <a href="#" class="menu-link">about</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-link">integrations</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-link">pricing</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-link">contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
             </nav>
         </header>
 
@@ -35,25 +47,36 @@
         <main>
             <div class="hero">
                 <h2>Simple Way to Organize Your Inspirations</h2>
-                <h3>I think what motivates people is not great hate,</br> 
-                    but great love for other people.</h3>
+                <p>I think what motivates people is not great hate,</br> 
+                    but great love for other people.</p>
             </div>
             <div class="sign-up">
                 <!-- need a link for login if already signed up -->
-                <p>sign up for free</p>
+                <p class="form-title">sign up for free</p>
                 <div class="sign-up-form">
-    
+                    <span class="error animated tada" id="msg"></span>
+                    <form name="signUpForm" class="form" id="sign-up-form">
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="text" name="email" placeholder="E-mail">
+                        <i class="togglePassword" id="eye"><img src="./img/eye.svg"/></i>
+                        <!-- <img class="togglePassword" id="eye" src="./img/eye.svg"/> -->
+                        <input type="password" name="password" placeholder="Passsword" id="pwd">
+                        <input type="submit" value="Sign up >" class="btn1">
+                    </form>
                 </div>
                 <p>By clicking "Sign up" I agree to our </br>
                     <a href="#">Terms of Service</a>.</p>
             </div>
         </main>
 
-
         <footer>
-            <div class="copyright">© 2016 Stamp. All Rights Reserved</div>
+            <div class="copyright">
+                <p>
+                    © <span id="date"></span> Stamp. All Rights Reserved
+                </p>
+            </div>
             <nav>
-                <ul>
+                <ul class="footer-links">
                     <li>
                         <a href="#">contact</a>
                     </li>
@@ -70,8 +93,6 @@
             </nav>
         </footer>
 
-
         <script type="text/javascript" src="src/index.js"></script>
     </body>
-
 </html>
